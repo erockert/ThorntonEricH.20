@@ -38,7 +38,7 @@ public Babylonian(double num)
     //calculating the exact answer
     SQrt = Math.sqrt(number);  
     //testing the mragin of error upper boundary
-    Errorup = SQrt + 0.00001;  
+    Errorup = SQrt + 0.00001;    
     //testing the margin of error lower boundary
     Errordown = SQrt - 0.00001; 
     //calling the recursion method
