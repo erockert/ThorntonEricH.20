@@ -39,7 +39,7 @@ public Babylonian(double num)
     Errordown = SQrt - 0.00001;
     //calling the recursion method
     RecursiveMethod();
-}
+} 
 //Main method
 public static void main(String[] args)
 {
@@ -48,7 +48,8 @@ double userInput;
 //Scanner for main
 Scanner a = new Scanner(System.in);
 //Print out and ask user to assign a number
-System.out.print("Enter a number");
+System.out.print("Enter a number: ");
+//Takes the value you assigned and uses it
 userInput = a.nextDouble();
 Babylonian f = new Babylonian(userInput);
 System.out.println(SQrt);
