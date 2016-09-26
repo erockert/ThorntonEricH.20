@@ -36,7 +36,7 @@ public Babylonian(double num)
     //testing the mragin of error upper boundary
     Errorup = SQrt + 0.00001;  
     //testing the margin of error lower boundary
-    Errordown = SQrt - 0.00001;
+    Errordown = SQrt - 0.00001; 
     //calling the recursion method
     RecursiveMethod();
 } 
