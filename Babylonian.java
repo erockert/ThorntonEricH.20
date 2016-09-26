@@ -1,4 +1,5 @@
 //Class for my Program
+import java.util.*;
 public class Babylonian
 {
    //Variable for the guess answer
@@ -6,21 +7,52 @@ public class Babylonian
    private static double number;
    private static double SQrt;
    private static double Errordown;
-   private statice double Erorrup;
+   private static double Errorup;
 
+//The recursion method
+public double RecursiveMethod()
+{
+//Recursion 
+  if(GAnswer < Errorup && GAnswer > Errordown)
+{
+     return GAnswer;
+}
+//If GAnswer isnt correct
+  else
+{
+     GAnswer = (GAnswer + (number/GAnswer)) /2;
+     return RecursiveMethod();
+}
+}
 //constructor for the babylonian method
 public Babylonian(double num)
 {
+    //Assigning number to num
     number = num;
-    
-    
+    //Testing the guess method
+    GAnswer = number / 2;
+    //calculating the exact answer
+    SQrt = Math.sqrt(number);
+    //testing the mragin of error upper boundery
+    Errorup = SQrt + 0.00001; 
+    //testing the margin of error lower boundery
+    Errordown = SQrt - 0.00001;
+    //calling the recursion method
+    RecursiveMethod();
 }
-//The recursion method
-pubic int RecursiveMethod(int aVariable)
+//Main method
+public static void main(String[] args)
 {
-int aVariable= RecursiveMethod();
-
+//Making variable for the user to input
+double userInput;
+//Scanner for main
+Scanner a = new Scanner(System.in);
+//Print out and ask user to assign a number
+System.out.print("Enter a number");
+userInput = a.nextDouble();
+Babylonian f = new Babylonian(userInput);
+System.out.println(SQrt);
+System.out.println(GAnswer);
 }
-
 
 }
