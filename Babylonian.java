@@ -38,7 +38,7 @@ public Babylonian(double num)
     //testing the margin of error lower boundary
     Errordown = SQrt - 0.00001; 
     //calling the recursion method
-    RecursiveMethod();
+    RecursiveMethod(); 
 } 
 //Main method
 public static void main(String[] args)
