@@ -4,9 +4,13 @@ public class Babylonian
 {
    //Variable for the guess answer
    private static double GAnswer;
+   //Variable for the number 
    private static double number;
+   //Variable for the actual answer
    private static double SQrt;
+   //Variable for the Margin of error in the lower boundary
    private static double Errordown;
+   //Variable for the Maring of error in the Upper Boundary
    private static double Errorup;
 
 //The recursion method
@@ -27,7 +31,7 @@ public double RecursiveMethod()
 //constructor for the babylonian method
 public Babylonian(double num)
 {
-    //Assigning number to num
+    //Assigning number to num 
     number = num;
     //Testing the guess method
     GAnswer = number / 2;
