@@ -32,7 +32,7 @@ public Babylonian(double num)
     //Testing the guess method
     GAnswer = number / 2;
     //calculating the exact answer
-    SQrt = Math.sqrt(number);
+    SQrt = Math.sqrt(number); 
     //testing the mragin of error upper boundery
     Errorup = SQrt + 0.00001; 
     //testing the margin of error lower boundery
