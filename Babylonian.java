@@ -19,7 +19,7 @@ public double RecursiveMethod()
 //Recursion 
   if(GAnswer < Errorup && GAnswer > Errordown)
 {
-     return GAnswer;
+     return GAnswer; 
 }
 //If GAnswer isnt correct
   else
@@ -57,10 +57,13 @@ System.out.print("Enter a number: ");
 //Takes the value you assigned and uses it
 userInput = a.nextDouble();
 while (userInput <= 0) {  
+        //print statement to tell the user that they inputted a negative number
         System.out.print("Please enter a positive number: ");
         userInput = a.nextDouble();
-     }
+     }  
+//calling the constructor
 Babylonian f = new Babylonian(userInput);
+
 System.out.println("The marginal error down is: " +Errordown);
 System.out.println("The marginal error up is: "+Errorup);
 System.out.println("The Guess answer is: "+ GAnswer);
