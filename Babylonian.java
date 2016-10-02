@@ -22,7 +22,7 @@ public double RecursiveMethod()
      return GAnswer; 
 }
 //If GAnswer isnt correct
-  else
+  else 
 {
      GAnswer = (GAnswer + (number/GAnswer)) /2;
      return RecursiveMethod();
