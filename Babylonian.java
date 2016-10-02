@@ -27,6 +27,7 @@ public double RecursiveMethod()
      GAnswer = (GAnswer + (number/GAnswer)) /2;
      return RecursiveMethod();
 }
+     
 }
 //constructor for the babylonian method
 public Babylonian(double num)
@@ -55,9 +56,15 @@ Scanner a = new Scanner(System.in);
 System.out.print("Enter a number: ");
 //Takes the value you assigned and uses it
 userInput = a.nextDouble();
+while (userInput <= 0) {  
+        System.out.print("Please enter a positive number: ");
+        userInput = a.nextDouble();
+     }
 Babylonian f = new Babylonian(userInput);
-System.out.println(SQrt);
-System.out.println(GAnswer);
+System.out.println("The marginal error down is: " +Errordown);
+System.out.println("The marginal error up is: "+Errorup);
+System.out.println("The Guess answer is: "+ GAnswer);
+System.out.println("The actual square root is: " +SQrt);
 }
 
 }
